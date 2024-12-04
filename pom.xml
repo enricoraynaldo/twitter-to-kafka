@@ -36,6 +36,8 @@
 		<spring-boot.version>3.4.0</spring-boot.version>
 		<twitter4j.version>4.0.7</twitter4j.version>
 		<lombok.version>1.18.30</lombok.version>
+		<httpclient.version>4.5.14</httpclient.version>
+		<json.version>20240303</json.version>
 	</properties>
 
 	<dependencyManagement>
@@ -55,6 +57,16 @@
 				<groupId>org.twitter4j</groupId>
 				<artifactId>twitter4j-stream</artifactId>
 				<version>${twitter4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>${httpclient.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>${json.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.projectlombok</groupId>
