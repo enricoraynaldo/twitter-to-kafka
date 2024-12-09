@@ -6,9 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
-@ConfigurationProperties(prefix = "kafka-poducer-config")
+@ConfigurationProperties(prefix = "kafka-producer-config")
 public class KafkaProducerConfigData {
-
     private String keySerializerClass;
     private String valueSerializerClass;
     private String compressionType;

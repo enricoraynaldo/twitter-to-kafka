@@ -1,9 +1,9 @@
-package com.microservices.demo.kafka.admin.config.exception;
+package com.microservices.demo.kafka.admin.exception;
 
 /**
- * Exception class for kafka client error situations.
+ * Exception class for Kafka client error situations.
  */
-public class KafkaClientException extends RuntimeException{
+public class KafkaClientException extends RuntimeException {
 
     public KafkaClientException() {
     }

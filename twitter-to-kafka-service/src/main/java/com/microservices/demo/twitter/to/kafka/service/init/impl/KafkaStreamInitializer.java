@@ -1,7 +1,7 @@
 package com.microservices.demo.twitter.to.kafka.service.init.impl;
 
 import com.microservices.demo.config.KafkaConfigData;
-import com.microservices.demo.kafka.admin.config.client.KafkaAdminClient;
+import com.microservices.demo.kafka.admin.client.KafkaAdminClient;
 import com.microservices.demo.twitter.to.kafka.service.init.StreamInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +26,5 @@ public class KafkaStreamInitializer implements StreamInitializer {
         kafkaAdminClient.createTopics();
         kafkaAdminClient.checkSchemaRegistry();
         LOG.info("Topics with name {} is ready for operations!", kafkaConfigData.getTopicNamesToCreate().toArray());
-
     }
 }
